@@ -1,16 +1,30 @@
-body { background-color: #FFEECC; 
-    color: #221811; 
-    font-family: Tahoma, Arial, sans-serif; }
-    header { background-color: #FFCCCC; 
-    color: #cb8193; 
-    text-align: center; }
-    h1 {line-height: 200%; }
-    h2 { color: #cb8193; }
-    nav { text-align: center; font-weight: bold;}
-    #wrapper { width: 80%; 
-    background-color: #FFDDCC; 
-    margin-right: auto; 
-    margin-left: auto;}
-    main{
-        margin-left: 5%;
-    }
+@import url("node_modules/modern-normalize/modern-normalize.css");
+body {
+  background-color: #ffeecc;
+  color: #221811;
+  font-family: Tahoma, Arial, sans-serif;
+}
+header {
+  background-color: #ffcccc;
+  color: #cb8193;
+  text-align: center;
+}
+h1 {
+  line-height: 200%;
+}
+h2 {
+  color: #cb8193;
+}
+nav {
+  text-align: center;
+  font-weight: bold;
+}
+#wrapper {
+  width: 80%;
+  background-color: #ffddcc;
+  margin-right: auto;
+  margin-left: auto;
+}
+main {
+  margin-left: 5%;
+}
