@@ -4,7 +4,7 @@
 
 @layer base {
   h2 {
-    @apply text-3xl font-bold text-left mt-6 mb-3;
+    @apply text-3xl font-bold text-left mt-6 mb-3 ml-4;
   }
 
   p {
