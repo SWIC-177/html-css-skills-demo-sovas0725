@@ -12,7 +12,7 @@
   }
 
   a {
-    @apply text-lg font-semibold text-center;
+    @apply text-lg font-semibold;
   }
 
   ul {
@@ -21,5 +21,9 @@
 
   li {
     @apply mt-5;
+  }
+
+  footer {
+    @apply grid justify-items-center bg-orange-200 p-2;
   }
 }
