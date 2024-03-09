@@ -94,6 +94,76 @@
           stop by the Horticulture Club's plant sale in the spring to get more
           plants for the season.
         </p>
+
+        <h2 class="mb-10">Contact Me</h2>
+        <form data-netlify="true" class="justify-items-center">
+          <fieldset>
+            <p>
+              <label for="fname">First Name:</label>
+              <input type="text" name="fname" id="fname" class="rounded-xl" />
+            </p>
+            <p>
+              <label for="lname">Last Name:</label>
+              <input type="text" name="lname" id="lname" class="rounded-xl" />
+            </p>
+            <p>
+              <label for="email">E-mail: </label>
+              <input type="text" name="email" id="email" class="rounded-xl" />
+            </p>
+
+            <label for="code">How often do you code?:</label>
+            <select name="code" id="code">
+              <option value="never">Never</option>
+              <option value="weekly">Weekly</option>
+              <option value="twiceweekly">Twice a Week</option>
+              <option value="daily">Daily</option>
+            </select>
+
+            <p>Would you like my recipes?:</p>
+            <input type="radio" id="yes" name="giverecipe" value="yes" />
+            <label for="yes">Yes</label><br />
+            <input type="radio" id="no" name="giverecipe" value="No" />
+            <label for="no">No</label><br />
+
+            <p>Select what recipes you'd like:</p>
+            <input type="checkbox" id="recipe1" name="recipe1" value="Chili" />
+            <label for="recipe1"> Chili</label>
+            <input
+              type="checkbox"
+              id="recipe2"
+              name="recipe2"
+              value="Cookies"
+            />
+            <label for="recipe2"> Chocolate Chip Cookies</label>
+            <input
+              type="checkbox"
+              id="recipe3"
+              name="recipe3"
+              value="BeefWellington"
+            />
+            <label for="recipe3"> Beef Wellington</label><br />
+            <p>
+              <label for="comments">Comments: </label><br /><textarea
+                name="comments"
+                id="comments"
+                rows="4"
+                cols="40"
+                class="rounded-2xl"
+              ></textarea>
+            </p>
+            <buttons>
+              <input
+                type="submit"
+                value="Submit"
+                class="h-12 w-32 bg-green-500 hover:bg-green-800 text-white rounded-2xl"
+              />
+              <input
+                type="reset"
+                class="h-12 w-32 bg-red-500 hover:bg-red-800 text-white rounded-2xl"
+              />
+            </buttons>
+          </fieldset>
+        </form>
       </grid>
     </body>
     <footer>
