@@ -4,11 +4,11 @@
 
 @layer base {
   h2 {
-    @apply text-xl font-bold text-center;
+    @apply text-3xl font-bold text-left mt-6 mb-3;
   }
 
   p {
-    @apply ml-8 text-left text-lg;
+    @apply ml-8 text-left text-lg mb-4;
   }
 
   a {
@@ -16,6 +16,10 @@
   }
 
   ul {
-    @apply ml-16 text-left text-lg;
+    @apply ml-16 text-left text-lg mt-5;
+  }
+
+  li {
+    @apply mt-5;
   }
 }
