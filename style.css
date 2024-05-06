@@ -27,3 +27,17 @@
     @apply grid justify-items-center bg-orange-200 p-2;
   }
 }
+
+/* Will change these later, just starting out with these values */
+
+@layer components {
+  .error {
+    @apply mt-4 scale-y-0 font-bold text-red-600;
+  }
+}
+
+@layer utilities {
+  .is-error {
+    @apply scale-y-100 transition-transform delay-150;
+  }
+}
