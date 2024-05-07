@@ -2,8 +2,7 @@ import { ERRORS, hideError, renderError } from './src/utils.js';
 
 console.log(ERRORS);
 const formEntry = [
-    ...Array.from(document.querySelectorAll('input')),
-    document.querySelector('select'),
+    ...Array.from(document.querySelectorAll('input[type="text"]')),
     document.querySelector('textarea')
 ]
 console.log(formEntry);
