@@ -1,3 +1,6 @@
+import { ERRORS } from './src/utils.js';
+
+console.log(ERRORS);
 const formEntry = [
     ...Array.from(document.querySelectorAll('input')),
     document.querySelector('select'),
