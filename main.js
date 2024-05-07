@@ -12,7 +12,9 @@ const submitButton = document.querySelector('button[type="submit"]');
 const resetButton = document.querySelector('button[type="reset"]');
 
 formEntry.forEach((input) => {
-    input.addEventListener('blur', (event) => {
-        console.log("blur event", event.target.id);
+    input.addEventListener('blur', (e) => {
+        console.log(
+            ERRORS.find((error) => error.id === e.target.id).validate(e.target.value)
+        );
     });
 });
