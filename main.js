@@ -1,4 +1,4 @@
-import { ERRORS } from './src/utils.js';
+import { ERRORS, hideError, renderError } from './src/utils.js';
 
 console.log(ERRORS);
 const formEntry = [
