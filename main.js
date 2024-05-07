@@ -7,8 +7,6 @@ const formEntry = [
     document.querySelector('textarea')
 ]
 
-const submitButton = document.querySelector('button[type="submit"]');
-
 formEntry.forEach((input) => {
     input.addEventListener('blur', (e) => {
         const inputError = ERRORS.find((error) => error.id === e.target.id);
