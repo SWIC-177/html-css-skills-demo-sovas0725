@@ -32,7 +32,7 @@ export const ERRORS = [
 ];
 
 
-const submitButton = document.querySelector("button[type='submit']");
+export const submitButton = document.querySelector("button[type='submit']");
 
 export function hideError(input) {
     const elementParent = input.parentNode;
