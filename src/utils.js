@@ -31,3 +31,21 @@ export const ERRORS = [
     },
 ];
 
+export function hideError(input) {
+    input.parentNode.querySelector(".error").remove("is-error");
+};
+
+export function renderError(input, message) {
+    const elementParent = input.parentNode;
+
+    const elError = elementParent.querySelector(".error");
+
+    if (elError) elError.classList.add("is-error");
+
+    else {
+        const errorElement = document.createElement("p");
+        errorElement.className = "error is-error";
+        errorElement.textContent = message;
+        elementParent.appendChild(errorElement);
+    }
+};
