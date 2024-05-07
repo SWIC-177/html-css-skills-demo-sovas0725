@@ -22,14 +22,9 @@ export const ERRORS = [
     },
     {
         id: "comments",
-        errmsg: "Please enter a comment between 10 and 100 characters.",
-        validate(value) {
-            return value.length >= 10 && value.length <= 100;
-        },
+        errorMsg: "Please enter a comment between 10 and 100 characters.",
     },
-]
-
-/**
- * TODO:
- * Add error messages for radio and checkboxes.
-*/
+    {
+        id: "select",
+        errorMsg: "Please select an option.",
+    },
