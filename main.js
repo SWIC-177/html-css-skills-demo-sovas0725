@@ -1,4 +1,4 @@
-import { ERRORS, hideError, renderError } from './src/utils.js';
+import { ERRORS, hideError, renderError, submitButton } from './src/utils.js';
 
 console.log(ERRORS);
 
@@ -6,6 +6,9 @@ const formEntry = [
     ...Array.from(document.querySelectorAll('input[type="text"]')),
     document.querySelector('textarea')
 ]
+
+// Prevents user from just entering form without filling out all fields
+submitButton.disabled = true;
 
 formEntry.forEach((input) => {
     input.addEventListener('blur', (e) => {
