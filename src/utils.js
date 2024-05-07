@@ -1,30 +1,33 @@
+import validator from "validator";
+
 export const ERRORS = [
     {
         id: "fname",
-        errmsg: "Please enter your first name.",
+        errorMsg: "Please enter your first name.",
         validate(value) {
-            return value.length >= 2;
-        },
+            return value.length > 1;
+        }
     },
     {
         id: "lname",
-        errmsg: "Please enter your last name.",
+        errorMsg: "Please enter your last name.",
         validate(value) {
-            return value.length >= 2;
-        },
+            return value.length > 1;
+        }
     },
     {
         id: "email",
-        errmsg: "Please enter a valid email address.",
+        errorMsg: "Please enter a valid email address.",
         validate(value) {
-            return value.includes("@") && value.includes(".");
-        },
+            return validator.isEmail(value);
+        }
     },
     {
         id: "comments",
         errorMsg: "Please enter a comment between 10 and 100 characters.",
+        validate(value) {
+            return value.length >= 10 && value.length <= 100;
+        }
     },
-    {
-        id: "select",
-        errorMsg: "Please select an option.",
-    },
+];
+
