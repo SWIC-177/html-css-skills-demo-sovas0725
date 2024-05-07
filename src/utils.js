@@ -31,21 +31,37 @@ export const ERRORS = [
     },
 ];
 
+
+const submitButton = document.querySelector("button[type='submit']");
+
 export function hideError(input) {
-    input.parentNode.querySelector(".error").remove("is-error");
-};
+    const elementParent = input.parentNode;
+    const elError = elementParent.querySelector(".error");
+
+    if (elError) {
+        elError.classList.remove("is-error");
+    }
+    const errors = document.querySelectorAll(".is-error");
+
+    if (errors.length === 0) {
+        submitButton.disabled = false;
+    }
+}
 
 export function renderError(input, message) {
     const elementParent = input.parentNode;
+    
 
     const elError = elementParent.querySelector(".error");
 
-    if (elError) elError.classList.add("is-error");
-
-    else {
+    if (elError) {
+        elError.classList.add("is-error");
+    } else {
         const errorElement = document.createElement("p");
         errorElement.className = "error is-error";
         errorElement.textContent = message;
         elementParent.appendChild(errorElement);
     }
-};
+
+    submitButton.disabled = true;
+}
